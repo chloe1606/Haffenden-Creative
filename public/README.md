@@ -17,6 +17,11 @@ In Cloudflare Workers Builds, set the root directory to `public`, leave the
 build command empty, and use `npx wrangler deploy` as the deploy command.
 The committed `wrangler.jsonc` configures this as a static-assets Worker.
 
+For preview branch builds, use `npx wrangler preview`. The configuration includes
+the required `previews` block; it is empty because this site needs no
+preview-specific bindings or variables. Use `npx wrangler deploy` for production
+builds, not `npx wrangler preview`.
+
 The `.assetsignore` file allows only `index.html` and `styles.css` to be uploaded.
 This prevents Wrangler's installed dependencies, including the large `workerd`
 binary, from being treated as website assets. When adding local images, fonts,
