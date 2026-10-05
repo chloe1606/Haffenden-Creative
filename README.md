@@ -11,6 +11,11 @@ from the repository directory, then open http://localhost:8000.
 No install or build step is needed. Deploy `index.html` and `styles.css`
 to any static web host.
 
+The header and footer use the supplied Haffenden Creative logo hosted on GitHub.
+Loading it requires internet access; to self-host it, download the original image
+and update both image URLs in `index.html`. The site palette uses cyan and blue
+to complement the logo, while concept project previews retain their own colours.
+
 ## Add your content
 
 - Replace the four clearly labelled concept previews in `index.html` with
